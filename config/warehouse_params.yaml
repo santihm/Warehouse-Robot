@@ -1,0 +1,6 @@
+warehouse_size: [10, 10]
+robots:
+  - id: R1
+    start_position: [0, 0]
+  - id: R2
+    start_position: [5, 5]

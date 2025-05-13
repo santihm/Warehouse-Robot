@@ -1,0 +1,17 @@
+<launch>
+    <!-- Lanzar el nodo robot_node5 -->
+    <node name="robot_node5" pkg="warehouse_robot" type="robot_node5.py" output="screen">
+        <param name="robot_speed" value="0.5" />
+    </node>
+    <!-- Lanzar el nodo warehouse_map_publisher5 -->
+    <node name="warehouse_map_publisher5" pkg="warehouse_robot" type="warehouse_map_publisher5.py" output="screen">
+        <param name="warehouse_width" value="20" />
+        <param name="warehouse_height" value="20" />
+        <param name="num_stations" value="4" />
+        <param name="num_shelves" value="50" />
+    </node>
+
+    <!-- Lanzar el nodo warehouse_manager5 -->
+    <node name="warehouse_manager5" pkg="warehouse_robot" type="warehouse_manager5.py" output="screen">
+    </node>
+</launch>

@@ -1,0 +1,24 @@
+<launch>
+    <!-- Cargar el modelo URDF del robot -->
+    <param name="robot_description" command="cat $(find warehouse_robot)/urdf/robot.urdf" />
+
+    <!-- Lanzar RViz para la visualización -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find warehouse_robot)/rviz/warehouse_simulation.rviz" />
+
+    <!-- Lanzar el nodo warehouse_map_publisher6 -->
+    <node name="warehouse_map_publisher6" pkg="warehouse_robot" type="warehouse_map_publisher6.py" output="screen">
+        <param name="warehouse_width" value="20" />
+        <param name="warehouse_height" value="20" />
+        <param name="num_stations" value="4" />
+        <param name="num_shelves" value="50" />
+    </node>
+
+    <!-- Lanzar el nodo robot_node6 -->
+    <node name="robot_node6" pkg="warehouse_robot" type="robot_node6.py" output="screen">
+        <param name="robot_speed" value="0.5" />
+    </node>
+
+    <!-- Lanzar el nodo warehouse_manager6 -->
+    <node name="warehouse_manager6" pkg="warehouse_robot" type="warehouse_manager6.py" output="screen">
+    </node>
+</launch>

@@ -1,0 +1,7 @@
+int32 width
+int32 height
+int32 num_stations
+int32 num_shelves
+---
+bool success
+string message

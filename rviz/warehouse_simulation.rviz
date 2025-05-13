@@ -1,0 +1,69 @@
+Panels:
+  - Class: rviz/Displays
+    Name: Displays
+  - Class: rviz/Views
+    Name: Views
+    Property Tree Widget:
+      Expanded:
+        - /Grid
+        - /Map
+        - /RobotModel
+        - /Robot Pose
+    Splitter Ratio: 0.5
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz/Grid
+      Color: 160; 160; 160
+      Enabled: true
+      Name: Grid
+      Plane: XY
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Alpha: 1
+      Class: rviz/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: true
+      Frame: map
+      Name: Map
+      Topic: /map
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Class: rviz/RobotModel
+      Enabled: true
+      Name: RobotModel
+      Robot Description: robot_description
+      Value: true
+    - Arrow Length: 0.3
+      Class: rviz/Pose
+      Enabled: true
+      Name: Robot Pose
+      Pose Topic: /robot_pose
+      Unreliable: false
+      Value: true
+  Enabled: true
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+    - Class: rviz/FocusCamera
+    - Class: rviz/Measure
+  Value: true
+  Views:
+    Current:
+      Class: rviz/TopDownOrtho
+      Focal Point: 10; 10; 0
+      Height: 20
+      Name: TopDownOrtho
+      Near Clip Distance: 0.01
+      Scale: 1
+      Target Frame: <Fixed Frame>
+      Value: true
+      Width: 20
+    Saved: ~

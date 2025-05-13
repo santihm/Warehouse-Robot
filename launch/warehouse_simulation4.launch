@@ -1,0 +1,12 @@
+<launch>
+
+    <!-- Lanzar el nodo warehouse_manager4 -->
+    <node name="warehouse_manager4" pkg="warehouse_robot" type="warehouse_manager4.py" output="screen" />
+
+    <!-- Lanzar el nodo warehouse_map_publisher4 -->
+    <node name="warehouse_map_publisher4" pkg="warehouse_robot" type="warehouse_map_publisher4.py" output="screen" />
+
+    <!-- Lanzar el nodo robot_node4 -->
+    <node name="robot_node4" pkg="warehouse_robot" type="robot_node4.py" output="screen" /> 
+
+</launch>

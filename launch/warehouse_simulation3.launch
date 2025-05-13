@@ -1,0 +1,10 @@
+<launch>
+    <!-- Lanzar el nodo para gestionar las tareas -->
+    <node name="warehouse_manager3" pkg="warehouse_robot" type="warehouse_manager3.py" output="screen"/>
+
+    <!-- Lanzar el nodo para publicar el mapa del almacén -->
+    <node name="warehouse_map_publisher3" pkg="warehouse_robot" type="warehouse_map_publisher3.py" output="screen"/>
+
+    <!-- Lanzar el nodo para el robot -->
+    <node name="robot_node3" pkg="warehouse_robot" type="robot_node3.py" output="screen"/>
+</launch>

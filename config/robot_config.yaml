@@ -1,0 +1,4 @@
+robot_1:
+  initial_position: [0.0, 0.0]
+  task_type: "Load"
+  task_frequency: 1.0
